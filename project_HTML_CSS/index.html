@@ -8,23 +8,64 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="modal_card--buy">
+        <div class="container_card">
+            <header>
+                <div class="card_header--icon"><i class="bx bx-x"></i></div>
+                <div class="card_header--text">
+                    <h1><i class='bx bxs-backpack' ></i>Tickets</h1>
+                    
+                </div>
+            </header>
+            <main>
+                <div class="card_main--input input--amount">
+                    <label for="">Tickets, $15 per person</label>
+                    <input type="text" placeholder="How many ?">
+                </div>
+                <div class="card_main--input input--email">
+                    <label for="">Send to</label>
+                    <input type="text" placeholder="Enter Email">
+                </div>
+
+                <div class="card_main--button">
+                    <button>Pay</button>
+                </div>
+            </main>
+            <footer>
+                <button>Close
+                    <i class="bx bx-x"></i>
+                </button>
+                <p>Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+    </div>
     <div class="container">
         <nav class="list_menu">
             <ul class="list_item">
                 <li class="item">
-                    <a href="#home">Home</a>   
+                    <a href="#home">HOME</a>   
                 </li>
                 <li class="item">
-                    <a href="#band">Band</a>
+                    <a href="#band">BAND</a>
                 </li>
                 <li class="item">
-                    <a href="#">Tour</a>                
+                    <a href="#tour">TOUR</a>                
                 </li>
                 <li class="item">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
                 <li class="item">
-                    <a href="#">More</a>
+                    <a href="#">MORE<i class='bx bx-caret-down'></i></a>
+
+                    <div class="modal_item--more">
+                        <div class="container--more">
+                            <ul class="list--more">
+                                <li class="item--more">Merchandise</li>
+                                <li class="item--more">Extras</li>
+                                <li class="item--more">Media</li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
             </ul>
             <div class="icon">
@@ -33,6 +74,7 @@
         </nav>
     </div>
 
+   
     <div id="home">
         <div class="block_image">
             <img src="https://www.w3schools.com/w3images/ny.jpg" alt="">
@@ -77,9 +119,9 @@
             </header>
             <main>
                 <ul>
-                    <li>September</li>
-                    <li>October</li>
-                    <li>November</li>
+                    <li>September <span>Sold out</span></li>
+                    <li>October <span>Sold out</span></li>
+                    <li>November <span>3</span></li>
                 </ul>
             </main>
             <footer>
@@ -128,6 +170,8 @@
                         </div>
                     </div>
                 </div>
+
+      
             </footer>
         </div>
     </div>
@@ -193,4 +237,5 @@
         </article>
     </div>
 </body>
+<script src="app.js"></script>
 </html>
